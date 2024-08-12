@@ -1,0 +1,116 @@
+{
+  "GET_USERS_DETAILS": {
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/object1722691007.json",
+    "title": "Root",
+    "type": "object",
+    "required": ["code", "meta", "data"],
+    "properties": {
+      "code": {
+        "$id": "#root/code",
+        "title": "Code",
+        "type": "integer",
+        "examples": [200],
+        "default": 0
+      },
+      "meta": {
+        "$id": "#root/meta",
+        "title": "Meta",
+        "type": "object",
+        "required": ["pagination"],
+        "properties": {
+          "pagination": {
+            "$id": "#root/meta/pagination",
+            "title": "Pagination",
+            "type": "object",
+            "required": ["total", "pages", "page", "limit"],
+            "properties": {
+              "total": {
+                "$id": "#root/meta/pagination/total",
+                "title": "Total",
+                "type": "integer",
+                "examples": [2995],
+                "default": 0
+              },
+              "pages": {
+                "$id": "#root/meta/pagination/pages",
+                "title": "Pages",
+                "type": "integer",
+                "examples": [300],
+                "default": 0
+              },
+              "page": {
+                "$id": "#root/meta/pagination/page",
+                "title": "Page",
+                "type": "integer",
+                "examples": [1],
+                "default": 0
+              },
+              "limit": {
+                "$id": "#root/meta/pagination/limit",
+                "title": "Limit",
+                "type": "integer",
+                "examples": [10],
+                "default": 0
+              }
+            }
+          }
+        }
+      },
+      "data": {
+        "$id": "#root/data",
+        "title": "Data",
+        "type": "array",
+        "default": [],
+        "items": {
+          "$id": "#root/data/items",
+          "title": "Items",
+          "type": "object",
+          "required": ["id", "name", "email", "gender", "status"],
+          "properties": {
+            "id": {
+              "$id": "#root/data/items/id",
+              "title": "Id",
+              "type": "integer",
+              "examples": [7281466],
+              "default": 0
+            },
+            "name": {
+              "$id": "#root/data/items/name",
+              "title": "Name",
+              "type": "string",
+              "default": "",
+              "examples": ["Gautam Sinha"],
+              "pattern": "^.*$"
+            },
+            "email": {
+              "$id": "#root/data/items/email",
+              "title": "Email",
+              "type": "string",
+              "default": "",
+              "examples": ["gautam_sinha@schamberger-weimann.test"],
+              "pattern": "^.*$"
+            },
+            "gender": {
+              "$id": "#root/data/items/gender",
+              "title": "Gender",
+              "type": "string",
+              "default": "",
+              "examples": ["male"],
+              "pattern": "^.*$"
+            },
+            "status": {
+              "$id": "#root/data/items/status",
+              "title": "Status",
+              "type": "string",
+              "default": "",
+              "examples": ["active"],
+              "pattern": "^.*$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

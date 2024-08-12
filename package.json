@@ -1,0 +1,25 @@
+{
+  "name": "supertest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "supertest.js",
+  "scripts": {
+    "test-debug": "mocha Scenario --require Helper/call-hook.js --timeout 30000 --recursive"
+  },
+  "type": "commonjs",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "chai-json-schema": "^1.5.1",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.0",
+    "hex-encode-decode": "^1.0.0",
+    "mocha": "^9.2.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "supertest": "^6.2.2"
+  }
+}

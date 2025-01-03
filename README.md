@@ -22,6 +22,9 @@ The minimum supported version is NPM 8. You can check your NPM version by runnin
 npm -version
 ```
 
+Make sure value token in config file changed to your own gorest's token
+
+
 ## Install dependencies
 
 ```shell
@@ -31,5 +34,5 @@ npm i
 ## Run the tests
 
 ```shell
-npm run test-gorest
+npm run test-debug
 ```
